@@ -15,7 +15,20 @@ const config = {
     favicon: 'img/favicon.ico',
     organizationName: 'FelisDevelopment', // Usually your GitHub org/user name.
     projectName: 'FelisDevelopment.github.io', // Usually your repo name.
-
+    themes: [
+        [
+            require.resolve("@easyops-cn/docusaurus-search-local"),
+            {
+                // ... Your options.
+                // `hashed` is recommended as long-term-cache of index file is possible.
+                hashed: true,
+                // For Docs using Chinese, The `language` is recommended to set to:
+                // ```
+                // language: ["en", "zh"],
+                // ```
+            },
+        ],
+    ],
     presets: [
         [
             '@docusaurus/preset-classic',
@@ -32,7 +45,6 @@ const config = {
             }),
         ],
     ],
-
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
