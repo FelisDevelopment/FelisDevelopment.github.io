@@ -41,23 +41,13 @@
 .main-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     background-color: var(--wrapper-background);
 }
 
 .docs-wrapper {
     justify-content: stretch;
     align-items: stretch;
-}
-
-.icon-button {
-    transition: 300ms;
-    border: 0.12rem solid var(--ifm-color-primary-darkest);
-}
-
-.icon-button:hover {
-    background-color: var(--ifm-color-primary-darkest);
-    cursor: pointer;
 }
 
 a,
