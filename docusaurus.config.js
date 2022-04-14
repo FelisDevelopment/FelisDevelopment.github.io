@@ -18,13 +18,13 @@ const config = {
 
     presets: [
         [
-            'classic',
+            '@docusaurus/preset-classic',
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/FelisDevelopment/felisdevelopment.github.io/tree/main',
+                    editUrl: 'https://github.com/FelisDevelopment/FelisDevelopment.github.io/tree/main',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -38,6 +38,7 @@ const config = {
         ({
             colorMode: {
                 defaultMode: 'dark',
+                disableSwitch: true,
             },
             navbar: {
                 title: 'Felis Development',
