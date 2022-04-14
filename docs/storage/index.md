@@ -15,6 +15,7 @@ Please carefully read installation process, otherwise `fd_storage` resource will
 ### Global dependencies
 
 We've tried to include to make resource as standalone or framework depended as possible, so you won't need to that many dependencies. For this resource to work, you'll need to install
+- [PolyZone](https://github.com/mkafrin/PolyZone) [mandatory]
 - [Howdy Hackminigame](https://github.com/HiHowdy/howdy-hackminigame) [mandatory for hacking containers]
 
 and other framework specific dependencies.
@@ -26,7 +27,7 @@ and other framework specific dependencies.
 Resource should be compatible with older and newest QBCore versions, you can get it at [QBCore Framework Repository](https://github.com/qbcore-framework). However, it's tested only with newest version.
 
 Additionally you'll need:
-- [qb-target](https://github.com/BerkieBb/qb-target)
+- [qb-target](https://github.com/BerkieBb/qb-target) [mandatory]
 
 Please make sure to ensure it before `fd_storage` resource, and don't forget to set your framework and core resource in `shared/config.lua`.
 </TabItem>
@@ -34,8 +35,8 @@ Please make sure to ensure it before `fd_storage` resource, and don't forget to 
 
 Use a compatible version of [ESX Legacy](https://github.com/esx-framework/esx-legacy) (1.6.0+).
 Additionally you'll need:
-- [ox_inventory](https://github.com/overextended/ox_inventory)
-- [qtarget](https://github.com/overextended/qtarget)
+- [ox_inventory](https://github.com/overextended/ox_inventory) [mandatory]
+- [qtarget](https://github.com/overextended/qtarget) [mandatory]
 
 Please make sure to ensure them before `fd_storage` resource, and don't forget to set your framework and core resource in `shared/config.lua`.
 </TabItem>
