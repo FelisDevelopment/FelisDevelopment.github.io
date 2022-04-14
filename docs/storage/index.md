@@ -14,7 +14,7 @@ Please carefully read installation process, otherwise `fd_storage` resource will
 
 ### Global dependencies
 
-We've tried to include to make resource as standalone or framework depended as possible, so you won't need to that many dependencies. For this resource to work, you'll need to install
+We've tried not use a lot of third party dependencies, so you won't need to install that many dependencies. For this resource to work, you'll need to install
 - [PolyZone](https://github.com/mkafrin/PolyZone) [mandatory]
 - [Howdy Hackminigame](https://github.com/HiHowdy/howdy-hackminigame) [mandatory for hacking containers]
 
