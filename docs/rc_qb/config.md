@@ -20,13 +20,6 @@ Config = {
             maxDistance = 320.0, -- max distance after which signal will be lost
             battery = 45 -- how much battery will drone / car have in minutes
         },
-        pd_drone = {
-            name = "pd_drone",
-            model = `ch_prop_casino_drone_02a`,
-            camOffset = { -0.125, -0.135 }, -- camera offsets
-            maxDistance = 320.0, -- max distance after which signal will be lost
-            battery = 45 -- how much battery will drone / car have in minutes
-        },
         rc_car = {
             name = "rc_car",
             model = `rcbandito`,
