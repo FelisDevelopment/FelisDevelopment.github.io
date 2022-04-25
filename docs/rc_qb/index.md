@@ -127,4 +127,4 @@ If you did everything as described above, please start your server and enjoy rem
 
 ### Questions
 
-If you have an issue or questions, please open an issue in [fd_storage support repo](https://github.com/FelisDevelopment/fd_rc_support/issues).
+If you have an issue or questions, please open an issue in [fd_rc support repo](https://github.com/FelisDevelopment/fd_rc_support/issues).
