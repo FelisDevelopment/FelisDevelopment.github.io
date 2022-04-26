@@ -21,6 +21,7 @@ Resource is compatible with QBCore, you can get it at [QBCore Framework Reposito
 
 Additionally you'll need:
 - [qb-target](https://github.com/BerkieBb/qb-target) [mandatory]
+- [qb-menu](https://github.com/qbcore-framework/qb-menu) [mandatory]
 
 Please make sure to ensure it before `fd_rc` resource, and don't forget to set your core resource in `shared/config.lua`.
 </TabItem>
