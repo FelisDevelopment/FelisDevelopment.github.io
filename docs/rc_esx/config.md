@@ -51,7 +51,7 @@ Config = {
 
 Since script is dynamic, you can add new remote control vehicles at any time.
 
-### fd_storage config
+### fd_rc config
 First of all, add rc to config `shared/config.lua`, please refer to example down below. It will be named `newdrone`
 
 ```lua
