@@ -65,6 +65,11 @@ const config = {
                         position: 'left',
                     },
                     {
+                        href: 'https://discord.gg/h26D7WfqGF',
+                        label: 'Discord',
+                        position: 'left',
+                    },
+                    {
                         to: 'docs/',
                         label: 'Documentation',
                         position: 'right',
