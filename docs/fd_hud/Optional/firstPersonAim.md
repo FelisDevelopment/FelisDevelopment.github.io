@@ -1,5 +1,5 @@
 ---
-title: (optional) First Persom shooting from vehicle
+title: First Persom shooting from vehicle
 ---
 
 ## First person shooting

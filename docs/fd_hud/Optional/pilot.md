@@ -1,5 +1,5 @@
 ---
-title: (optional) Pilot license
+title: Pilot license
 ---
 ## Pilot license
 If enabled in config, players won't be able to drive any aircraft, but there's a catch.

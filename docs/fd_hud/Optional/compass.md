@@ -1,5 +1,5 @@
 ---
-title: (optional) Compass as an item
+title: Compass as an item
 ---
 
 ## Default
