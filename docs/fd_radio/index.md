@@ -1,6 +1,6 @@
 ---
 title: Getting started
 ---
-:::info Choose framework/version
-Please choose your framework/version on right, and proceed there.
+:::info Choose
+Please choose what you like to read on the right. If you're looking for installation guide, choose framework and get started!
 :::
