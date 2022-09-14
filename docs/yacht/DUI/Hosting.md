@@ -34,8 +34,8 @@ UI is fully opensource and can be found at:
 6. Please update your url accordingly in `modules/heist/client.lua` at line 4:
     ```lua
         local urls = {
-        text = 'http://yacht.felis.cloud/text?text=%s&fontSize=5em',
-        countdown = 'http://yacht.felis.cloud/countdown?fontSize=5em&seconds=%s',
-        clue = 'http://yacht.felis.cloud/clue?fontSize=5em&up=%s&down=%s&left=%s&right=%s&identifier=%s'
-    }
+            text = 'http://yacht.felis.cloud/text?text=%s&fontSize=5em',
+            countdown = 'http://yacht.felis.cloud/countdown?fontSize=5em&seconds=%s',
+            clue = 'http://yacht.felis.cloud/clue?fontSize=5em&up=%s&down=%s&left=%s&right=%s&identifier=%s'
+        }
     ```
