@@ -9,7 +9,7 @@ Please carefully read installation process, otherwise `fd_radio` resource will n
 
 ### Dependecies
 
-We've tried not use a lot of third party dependencies, so you won't need to install that many dependencies. For this resource to work, you'll need to install
+We've tried not to use a lot of third party dependencies, so you won't need to install that many dependencies. For this resource to work, you'll need to install
 - [pma-voice](https://github.com/AvarianKnight/pma-voice) [mandatory]
 - [fd_lib](https://github.com/FelisDevelopment/fd_lib) [mandatory]
 
@@ -22,9 +22,11 @@ Go to `shared/config.lua` and set your framework.
 Config.core = 'qb' -- available: standalone, QB or ESX
 Config.coreResource = 'qb-core' -- only used if QB
 ```
-
+:::caution
+If you're using old QB Inventory that means old qb-inventory, lj-inventory or any other inventory, please enable `Config.oldItemCheckingForQBCore` in `shared/config.lua`.
+:::
 ### Optional
-Check out optional stuff, which might make sense for your setup. [Optional link](http://localhost:3000/docs/fd_radio/optional)
+Check out optional stuff, which might make sense for your setup. [Optional link](/docs/fd_radio/optional)
 
 ### Start
 

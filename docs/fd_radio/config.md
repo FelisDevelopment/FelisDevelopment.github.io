@@ -10,6 +10,7 @@ Config = {}
 
 Config.core = 'qb' -- available: standalone, QB or ESX
 Config.coreResource = 'qb-core' -- only used if QB
+Config.oldItemCheckingForQBCore = false -- only used for qbcore, to enable old item checking
 
 Config.defaultTheme = 'default' -- Default theme to use, available: default, blue, green, red, yellow
 Config.allowThemeChange = true -- Client side only, command will be available if enabled
