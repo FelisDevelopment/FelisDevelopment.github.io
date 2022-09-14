@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[7729],{2385:function(t){t.exports=JSON.parse('{"title":"Yacht Heist","slug":"/category/yacht-heist","permalink":"/docs/category/yacht-heist","navigation":{"next":{"title":"Hosting your own DUI","permalink":"/docs/yacht/DUI/Hosting"}}}')}}]);
