@@ -157,6 +157,10 @@ Config.restrictedChannels = {
         police = true,
         ambulance = true,
         ace = true
+    },
+    [111] = {
+        ['license:xxxxxxxx'] = true,
+        ['steam:xxxxx'] = true
     }
 }
 
