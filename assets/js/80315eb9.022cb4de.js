@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[4621],{1493:function(e){e.exports=JSON.parse('{"title":"FD HUD","slug":"/category/hud","permalink":"/docs/category/hud","navigation":{"next":{"title":"Config","permalink":"/docs/fd_hud/Config/current"}}}')}}]);
