@@ -12,9 +12,9 @@ Please carefully read installation process, otherwise `fd_hud` resource will not
 ### Framework Specific
 
 <Tabs>
-<TabItem value="qbcore" label="QBCore" default>
+<TabItem value="esx" label="ESX" default>
 
-Resource is compatible with QBCore, you can get it at [QBCore Framework Repository](https://github.com/qbcore-framework). However, it's tested only with newest version.
+Resource is compatible with ESX Framework (ESX Legacy 1.6.0+).
 
 Additionally you'll need:
 - [fd_lib](https://github.com/FelisDevelopment/fd_lib/releases) [mandatory]
