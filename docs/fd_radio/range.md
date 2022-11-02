@@ -3,23 +3,21 @@ title: Range
 ---
 
 ## Disable range
-To disable range for everyone, please update config `Config.radioRangesEnabled` to `false`.
+To disable range for everyone, please update config `Config.UseRanges` to `false`.
 ```lua
-Config.radioRangesEnabled = false
+Config.UseRanges = false
 ```
 
-## Disable range for police
-To disable range for police, please update config `Config.disableRangeForPolice` to `false`.
+## Disable range for jobs
+To disable range for multiple jobs, please update config `Config.DisableRangesForJobs` and add job to table.
 ```lua
-Config.disableRangeForPolice = false
+Config.DisableRangesForJobs = { 'police', 'ambulance' }
 ```
 
 ## Disable for specific whitelisted radio
-To disable range for specific whitelisted radio, please go `Config.restrictedChannels`, find specific channel and add `rangeDisabled = true` to it. This will disable range for specific whitelisted radio.
+To disable range for specific whitelisted radio, please go `Config.DisableRangeForChannels`, and add specific channel to table.
 ```lua
-    [1] = {
-        police = true,
-        ambulance = true,
-        rangeDisabled = true
-    },
+Config.DisableRangeForChannels = {
+    [1] = true
+}
 ```

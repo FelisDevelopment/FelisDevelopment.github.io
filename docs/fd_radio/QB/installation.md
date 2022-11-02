@@ -27,7 +27,7 @@ If you're using old QB Inventory that means old qb-inventory, lj-inventory or an
 :::
 
 ### Adjust config
-Before starting, please adjust config values as you want. [Config](/docs/fd_radio/config.md)
+Before starting, please adjust config values as you want. [Config](/docs/fd_radio/config)
 
 ### Optional
 Check out optional stuff, which might make sense for your setup. [Optional link](/docs/fd_radio/optional)

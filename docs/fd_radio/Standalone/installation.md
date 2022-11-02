@@ -19,7 +19,7 @@ Go to `shared/config.lua` and set your version.
 Config.core = 'none' -- available: standalone, QB or ESX
 ```
 ### Adjust config
-Before starting, please adjust config values as you want. [Config](/docs/fd_radio/config.md)
+Before starting, please adjust config values as you want. [Config](/docs/fd_radio/config)
 
 ### Optional
 Check out optional stuff, which might make sense for your setup. [Optional link](http://localhost:3000/docs/fd_radio/optional)

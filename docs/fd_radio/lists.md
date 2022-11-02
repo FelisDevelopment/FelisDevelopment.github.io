@@ -2,25 +2,23 @@
 title: Lists
 ---
 
-## Enable lists for every radio
-To enable user list for every radio, please update config `Config.allChannelsHaveUserList` to `true`.
+## Enable lists for every channel
+To enable user list for every channel, please update config `Config.AllChanelsHaveUserList` to `true`.
 ```lua
-Config.allChannelsHaveUserList = false
+Config.AllChanelsHaveUserList = false
 ```
 
-## Enable lists for every radio
-To enable user list for all whietelisted radios, please update config `Config.allWhitelistedChannelsHaveUserList` to `true`.
+## Enable lists for every channel
+To enable user list for all whietelisted channels, please update config `Config.AllWhitelistedChannelsHaveUserList` to `true`.
 ```lua
-Config.allWhitelistedChannelsHaveUserList = false
+Config.AllWhitelistedChannelsHaveUserList = false
 ```
 
 ## Enable list for specific whitelisted radio
-If all other options are false above, you can enable list for specific whitelisted radios. To do so, please go `Config.restrictedChannels`, find specific channel and add `isListEnabled = true` to it. This will disable range for specific whitelisted radio.
+If all other options are false above, you can enable list for specific whitelisted radios. To do so, please go `Config.ChannelsWhichHasList` and add specific channel to it. This will enable
 
 ```lua
-    [1] = {
-        police = true,
-        ambulance = true,
-        isListEnabled = true
-    },
+Config.ChannelsWhichHasList = {
+    [1] = true
+}
 ```
