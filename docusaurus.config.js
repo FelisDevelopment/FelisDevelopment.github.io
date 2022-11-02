@@ -56,7 +56,7 @@ const config = {
                 title: 'Felis Development',
                 logo: {
                     alt: 'Felis Development',
-                    src: 'img/felislogo.png',
+                    src: 'img/felsilogofull.png',
                 },
                 items: [
                     {
