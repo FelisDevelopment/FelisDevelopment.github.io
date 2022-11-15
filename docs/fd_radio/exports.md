@@ -5,10 +5,10 @@ title: Exports
 ## Client side
 ### Join radio
 ```lua
-exports.fd_lib:joinRadio(channel)
+exports.fd_radio:joinRadio(channel)
 ```
 
 ### Leave radio
 ```lua
-exports.fd_lib:leaveRadio(channel)
+exports.fd_radio:leaveRadio(channel)
 ```
