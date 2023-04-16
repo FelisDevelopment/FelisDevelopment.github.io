@@ -7,27 +7,33 @@ import TabItem from '@theme/TabItem';
 
 :::caution
 
-Please carefully read installation process, otherwise `fd_radio` resource will not work.
+Please carefully read installation process, otherwise `fd_claw` resource will not work.
 :::
 
 ### Dependecies
 
 We've tried not to use a lot of third party dependencies, so you won't need to install that many dependencies. For this resource to work, you'll need to install
+
 - [ox_lib](https://github.com/overextended/ox_lib) [mandatory]
 - Supported inventory: Quasar Inventory, OX Inventory [mandatory]
 - [glow_minigames](https://github.com/christikat/glow_minigames) [optionakl, need only if `config.machinesCanBeHacked` is set to `true`]
 
 ### QBCore
+
 Use a compatible version of [ESX Legacy](https://github.com/esx-framework/esx-legacy) (Should be compatible with any version). Resource was tested with most recent [ox_recipe](https://github.com/overextended/ox_recipes) and [esx-recipe](https://github.com/esx-framework/ESX-recipes) for txAdmin.
 
 ### Framework detection
+
 Framework is detected automatically by resource name. if you've renamed `es_extended` to something else, please go to `modules/bridge/esx` and change
+
 ```lua
 local resourceName = 'es_extended'
 ```
+
 in both `client.lua` and `server.lua` to your resource name.
 
 ### Add items your inventory
+
 <Tabs>
 <TabItem value="quasar" label="Quasar inventory" default>
 
@@ -46,6 +52,7 @@ Add items to `qs-core/shared/items.lua`, get icons from `extras/Inventory images
     ['wasabi_kitty_tee_plushie'] 	 = {['name'] = 'wasabi_kitty_tee_plushie', 			['label'] = 'Wasabi Kitty tee plushie', 		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'wasabi_kitty_tee_plushie.png', 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Plush Plush!' },
     ['master_tee_plushie'] 			 = {['name'] = 'master_tee_plushie', 				['label'] = 'Master tee plushie', 				['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'master_tee_plushie.png', 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Plush Plush!' },
 ```
+
 </TabItem>
 <TabItem value="ox" label="OX Inventory">
 
@@ -168,19 +175,23 @@ Add items to `ox_inventory/data/items.lua` in your inventory resource, get icons
 </Tabs>
 
 ### Adjust config
+
 Before starting, please adjust config values as you want. [Config](/docs/fd_radio/config)
 
 ### Optional
+
 Check out optional stuff, which might make sense for your setup. [Optional link](/docs/fd_radio/optional)
 
 ### Start
 
 Add
+
 ```
 ensure ox_lib
 
 ensure fd_claw
 ```
+
 to your server.cfg and if you did everything as described above, please start your server and enjoy your new shiny claw machine!
 
 ## Common Issues
