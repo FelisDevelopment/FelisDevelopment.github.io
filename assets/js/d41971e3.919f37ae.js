@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[1408],{5064:function(n){n.exports=JSON.parse('{"title":"Advanced banking","slug":"/category/advanced-banking","permalink":"/docs/category/advanced-banking","navigation":{"next":{"title":"Config","permalink":"/docs/fd_banking/config"}}}')}}]);
