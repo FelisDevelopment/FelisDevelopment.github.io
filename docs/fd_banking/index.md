@@ -51,8 +51,6 @@ ensure fd_banking
 
 to your server.cfg and if you did everything as described above, please start your server and enjoy your new shiny new banking system.
 
-##
-
 ## Common Issues
 
 ### Database
