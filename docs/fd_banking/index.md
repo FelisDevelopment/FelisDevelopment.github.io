@@ -11,7 +11,11 @@ Please carefully read installation process, otherwise `fd_banking` resource will
 
 We've tried not to use a lot of third party dependencies, so you won't need to install that many dependencies. For this resource to work, you'll need to install
 
+Supported framework: QBCore or QBox [mandatory]
+
+- [oxmysql](https://github.com/overextended/oxmysql) [mandatory]
 - [ox_lib](https://github.com/overextended/ox_lib) [mandatory]
+- [ox_target](https://github.com/overextended/ox_target) [optional, places for it is not escrowed and can be easily changed to qb-target]
 
 ### QBCore
 
@@ -45,9 +49,21 @@ ensure ox_lib
 ensure fd_banking
 ```
 
-to your server.cfg and if you did everything as described above, please start your server and enjoy your new shiny claw machine!
+to your server.cfg and if you did everything as described above, please start your server and enjoy your new shiny new banking system.
+
+##
 
 ## Common Issues
+
+### Database
+
+If your user doesn't have permissions to create tables, please grant him permissions to do so. You can do it by executing following query:
+
+```sql
+GRANT CREATE, ALTER, DROP, INDEX, INSERT, SELECT, UPDATE, DELETE ON `database_name`.`table` TO 'username'@'localhost';
+```
+
+Otherwise, you can create tables manually, by executing provided .sql file in resource.
 
 ### Questions
 
