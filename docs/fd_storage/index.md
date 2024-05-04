@@ -15,66 +15,30 @@ Please carefully read installation process, otherwise `fd_storage` resource will
 ### Global dependencies
 
 We've tried not use a lot of third party dependencies, so you won't need to install that many dependencies. For this resource to work, you'll need to install
-- [PolyZone](https://github.com/mkafrin/PolyZone) [mandatory]
-- [Howdy Hackminigame](https://github.com/HiHowdy/howdy-hackminigame) [mandatory for hacking containers]
+
+- [ox_lib](https://github.com/overextended/ox_lib) [mandatory]
+- [ox_target](https://github.com/overextended/ox_target) [mandatory] (you can easily add bridge for other targets)
 
 and other framework specific dependencies.
-### Framework Specific
 
-<Tabs>
-<TabItem value="qbcore" label="QBCore" default>
+### Inventory
 
-Resource should be compatible with older and newest QBCore versions, you can get it at [QBCore Framework Repository](https://github.com/qbcore-framework). However, it's tested only with newest version.
-
-Additionally you'll need:
-- [qb-target](https://github.com/BerkieBb/qb-target) [mandatory]
-
-Please make sure to ensure it before `fd_storage` resource, and don't forget to set your framework and core resource in `shared/config.lua`.
-</TabItem>
-<TabItem value="esx" label="ESX">
-
-Use a compatible version of [ESX Legacy](https://github.com/esx-framework/esx-legacy) (1.6.0+).
-Additionally you'll need:
-- [ox_inventory](https://github.com/overextended/ox_inventory) [mandatory]
-- [qtarget](https://github.com/overextended/qtarget) [mandatory]
-
-Please make sure to ensure them before `fd_storage` resource, and don't forget to set your framework and core resource in `shared/config.lua`.
-</TabItem>
-</Tabs>
+At the moment, storage supports `qb-inventory` and `ox_inventory`. For other inventories, you'll have to write your own bridge.
 
 ## Config
 
-Depending on your framework please set appropriate framework configuration in `shared/config.lua`.
-
-<Tabs>
-<TabItem value="qbcore" label="QBCore" default>
-
-```lua
-core = {
-    framework = 'qbcore', -- available: qbcore, esx
-    resource = 'qb-core' -- for qbcore usually: qb-core, for esx usually: es_extended
-},
-```
-</TabItem>
-<TabItem value="esx" label="ESX">
-
-```lua
-core = {
-    framework = 'esx', -- available: qbcore, esx
-    resource = 'es_extended' -- for qbcore usually: qb-core, for esx usually: es_extended
-},
-```
-</TabItem>
-</Tabs>
+Storage is detecting framework automatically. If you have renamed your resources or core, please check `/modules/bridge` folder, there you'll be able to change name and etc. Otherwise, please check config at `shared/*` folder.
 
 ## Items
 
 ### Icons
+
 First of all, please move icons from `images/` folder to your inventory resource and add items to inventory config as specified below.
 
 ### Items
+
 <Tabs>
-<TabItem value="qbcore" label="QBCore" default>
+<TabItem value="qbcore" label="QB Inventory" default>
 
 Add items to `shared/items.lua` or where your `QBShared.Items` is.
 
@@ -237,178 +201,124 @@ Add items to `shared/items.lua` or where your `QBShared.Items` is.
         ["description"] = "Let's make that container safe..."
     },
 ```
+
 </TabItem>
-<TabItem value="esx" label="ESX">
+<TabItem value="ox" label="OX Inventory">
 
 Add items to `ox_inventory/data/items.lua`;
 
 ```lua
-    ['smallcrate'] = {
-		label = 'Small Crate',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Is there something in it?',
-        client = {
-            usetime = 2500,
-            export = 'fd_storage.smallcrate'
-        },
+    -- containers
+    ['smallcrate']               = {
+        label = 'Small crate',
+        weight = 100,
+        stack = false,
+        close = true,
         server = {
-            export = 'fd_storage.smallcrate'
+            export = "fd_storage.usedItem"
         }
-	},
-    ['mediumcrate'] = {
-		label = 'Medium Crate',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Is there something in it?',
-        client = {
-            usetime = 2500,
-            export = 'fd_storage.mediumcrate'
-        },
+    },
+    ['mediumcrate']              = {
+        label = 'Medium crate',
+        weight = 100,
+        stack = false,
+        close = true,
         server = {
-            export = 'fd_storage.mediumcrate'
+            export = "fd_storage.usedItem"
         }
-	},
-    ['bigcrate'] = {
-		label = 'Big Crate',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Is there something in it?',
-        client = {
-            usetime = 2500,
-            export = 'fd_storage.bigcrate'
-        },
+    },
+    ['bigcrate']                 = {
+        label = 'Big crate,
+        weight = 100,
+        stack = false,
+        close = true,
         server = {
-            export = 'fd_storage.bigcrate'
+            export = "fd_storage.usedItem"
         }
-	},
-
-    ['smallcontainer'] = {
-		label = 'Small Container',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Is there something in it?',
-        client = {
-            usetime = 2500,
-            export = 'fd_storage.smallcontainer'
-        },
+    },
+    ['smallcontainer']           = {
+        label = 'Small container',
+        weight = 100,
+        stack = false,
+        close = true,
         server = {
-            export = 'fd_storage.smallcontainer'
+            export = "fd_storage.usedItem"
         }
-	},
-    ['mediumcontainer'] = {
-		label = 'Medium Container',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Is there something in it?',
-        client = {
-            usetime = 2500,
-            export = 'fd_storage.mediumcontainer'
-        },
+    },
+    ['mediumcontainer']          = {
+        label = 'Medium container',
+        weight = 100,
+        stack = false,
+        close = true,
         server = {
-            export = 'fd_storage.mediumcontainer'
+            export = "fd_storage.usedItem"
         }
-	},
-    ['bigcontainer'] = {
-		label = 'Big Container',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Is there something in it?',
-        client = {
-            usetime = 2500,
-            export = 'fd_storage.bigcontainer'
-        },
+    },
+    ['bigcontainer']             = {
+        label = 'Big container',
+        weight = 100,
+        stack = false,
+        close = true,
         server = {
-            export = 'fd_storage.bigcontainer'
+            export = "fd_storage.usedItem"
         }
-	},
-
-    ['smalltrapcrate'] = {
-		label = 'Small Fake Crate',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Is there something in it?',
-        client = {
-            usetime = 2500,
-            export = 'fd_storage.smalltrapcrate'
-        },
+    },
+    ['smalltrapcrate']           = {
+        label = 'Small trap crate',
+        weight = 100,
+        stack = false,
+        close = true,
         server = {
-            export = 'fd_storage.smalltrapcrate'
+            export = "fd_storage.usedItem"
         }
-	},
-    ['trapcrate'] = {
-		label = 'Medium Fake Crate',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Is there something in it?',
-        client = {
-            usetime = 2500,
-            export = 'fd_storage.trapcrate'
-        },
+    },
+    ['trapcrate']                = {
+        label = 'Medium trap crate',
+        weight = 100,
+        stack = false,
+        close = true,
         server = {
-            export = 'fd_storage.trapcrate'
+            export = "fd_storage.usedItem"
         }
-	},
-    ['bigtrapcrate'] = {
-		label = 'Big Fake Crate',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Is there something in it?',
-        client = {
-            usetime = 2500,
-            export = 'fd_storage.bigtrapcrate'
-        },
+    },
+    ['bigtrapcrate']             = {
+        label = 'Big trap crate',
+        weight = 100,
+        stack = false,
+        close = true,
         server = {
-            export = 'fd_storage.bigtrapcrate'
+            export = "fd_storage.usedItem"
         }
-	},
-
-    ['portablefridge'] = {
-		label = 'Portable Fridge',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Is there something in it?',
-        client = {
-            usetime = 2500,
-            export = 'fd_storage.portablefridge'
-        },
+    },
+    ['portablefridge']           = {
+        label = 'Portable fridge',
+        weight = 100,
+        stack = false,
+        close = true,
         server = {
-            export = 'fd_storage.portablefridge'
+            export = "fd_storage.usedItem"
         }
-	},
-
-    ['craterepairkit'] = {
-		label = 'Container repairkit',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Extend that lifetime?'
-	},
-    ['cratepadlock'] = {
-		label = 'Container padloc',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Let\'s make that container safe...'
-	},
-    ['cratehackingdevice'] = {
-		label = 'Container hacking device',
-		weight = 1,
-		stack = false,
-		close = true,
-		description = 'Unlock that god damn container...'
-	},
+    },
+    ['cratepadlock']             = {
+        label = 'Container padlock',
+        weight = 5,
+        stack = false,
+        close = true,
+    },
+    ['cratehackingdevice']       = {
+        label = 'Container hacking device',
+        weight = 100,
+        stack = false,
+        close = true,
+    },
+    ['craterepairkit']           = {
+        label = 'Container repair kit',
+        weight = 100,
+        stack = false,
+        close = true,
+    },
 ```
+
 </TabItem>
 </Tabs>
 

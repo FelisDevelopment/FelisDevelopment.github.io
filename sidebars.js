@@ -48,11 +48,11 @@ const sidebars = {
       label: "Portable storage / containers",
       href: "/docs/fd_storage",
     },
-    {
-      type: "link",
-      label: "Portable Claw Machine",
-      href: "/docs/fd_claw",
-    },
+    // {
+    //   type: "link",
+    //   label: "Portable Claw Machine",
+    //   href: "/docs/fd_claw",
+    // },
     {
       type: "link",
       label: "Advanced Banking",
