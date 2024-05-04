@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[2358],{8732:function(e){e.exports=JSON.parse('{"title":"Portable storage / containers","slug":"/category/portable-storage--containers","permalink":"/docs/category/portable-storage--containers","navigation":{"next":{"title":"Config","permalink":"/docs/fd_storage/config"}}}')}}]);
