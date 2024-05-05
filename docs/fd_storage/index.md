@@ -228,7 +228,7 @@ Add items to `ox_inventory/data/items.lua`;
         }
     },
     ['bigcrate']                 = {
-        label = 'Big crate,
+        label = 'Big crate',
         weight = 100,
         stack = false,
         close = true,
