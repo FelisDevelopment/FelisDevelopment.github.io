@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[7817],{5764:function(e){e.exports=JSON.parse('{"title":"Pets","slug":"/category/pets","permalink":"/docs/category/pets","navigation":{"next":{"title":"Installation","permalink":"/docs/fd-pets/"}}}')}}]);
