@@ -16,6 +16,7 @@ Add items to `ox_inventory/data/shops.lua`;
         name = 'The Pet Shop',
         inventory = {
             { name = 'chicken',      price = 50000 },
+            { name = 'rabbit',      price = 50000 },
             { name = 'cat1',      price = 70000 },
             { name = 'cat2',      price = 70000 },
             { name = 'cat3',      price = 70000 },

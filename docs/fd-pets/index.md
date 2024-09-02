@@ -554,6 +554,13 @@ Add items to `ox_inventory/data/items.lua`;
         close = true,
         description = "Black-colored",
     },
+    ["rabbit"]             = {
+        label = "Rabbit",
+        weight = 5000,
+        stack = true,
+        close = true,
+        description = "Bring some carrots for sure",
+    },
 ```
 
 </TabItem>
